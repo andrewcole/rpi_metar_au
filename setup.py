@@ -33,7 +33,7 @@ setup(
     author_email='scott.sturdivant@gmail.com',
     license='MIT',
     classifiers=CLASSIFIERS,
-    url='https://github.com/ScottSturdivant/rpi_metar',
+    url='https://github.com/thommo17/rpi_metar_au',
     long_description=read_md('README.md'),
     install_requires=open('requirements.txt', 'r').read(),
     entry_points={
