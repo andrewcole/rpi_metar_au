@@ -30,7 +30,7 @@ license = { text = "MIT License" }
 [project.scripts]
 rpi_metar = "rpi_metar.core:main"
 rpi_metar_init = "rpi_metar.scripts.init:main"
-strand_test = "rpi_metar.scripts.strand_test:main"
+strand_test = "rpi_metar.scripts.strandtest:main"
 [project.urls]
 Homepage = "https://github.com/thommo17/rpi_metar_au"
 [tool.uv]
