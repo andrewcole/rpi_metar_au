@@ -1,0 +1,35 @@
+[project]
+name = "rpi_metar"
+authors = [
+    { name = "Scott Sturdivant", email='scott.sturdivant@gmail.com' }
+]
+version = "0.5"
+description = "Visualizing METAR data on a Raspberry Pi with LEDs."
+readme = "README.md"
+requires-python = ">=3"
+dependencies = [
+    "python-crontab==2.3.5",
+    "requests>=2.20.0",
+    "retrying==1.3.3",
+    "rpi-ws281x==4.3.4",
+    "RPi.GPIO==0.7.1",
+    "setuptools>=44.1.1",
+    "xmltodict==0.11.0",
+]
+keywords = [
+    "METAR",
+    "Raspberry Pi",
+]
+classifiers = [
+    'Development Status :: 4 - Beta',
+    'License :: OSI Approved :: MIT License',
+    'Programming Language :: Python :: 3',
+]
+license = { text = "MIT License" }
+[project.scripts]
+rpi_metar = "rpi_metar.core:main"
+rpi_metar_init = "rpi_metar.scripts.init:main"
+[project.urls]
+Homepage = "https://github.com/thommo17/rpi_metar_au"
+[tool.uv]
+package = true
